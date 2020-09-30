@@ -1,0 +1,22 @@
+{
+  "name": "mern_eccom",
+  "version": "1.0.0",
+  "description": "mern eccom app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NateMail/merneccom.git"
+  },
+  "author": "Nate Mailhiot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NateMail/merneccom/issues"
+  },
+  "homepage": "https://github.com/NateMail/merneccom#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
