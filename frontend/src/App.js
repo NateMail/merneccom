@@ -12,6 +12,7 @@ import ProfileScreen from "./Screens/ProfileScreen";
 import ShippingScreen from "./Screens/ShippingScreen";
 import PaymentScreen from "./Screens/PaymentMethodScreen";
 import PlaceOrderScreen from "./Screens/PlaceOrderScreen";
+import OrderScreen from "./Screens/OrderScreen";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Container>
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
+          <Route path="/orders/:id" component={OrderScreen} />
           <Route path="/profile" component={ProfileScreen} />
           <Route path="/shipping" component={ShippingScreen} />
           <Route path="/payment" component={PaymentScreen} />
