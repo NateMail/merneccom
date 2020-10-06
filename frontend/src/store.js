@@ -9,8 +9,8 @@ import {
   productDetailsReducer,
   productReviewCreateReducer,
   productTopRatedReducer,
-} from "./reducers/productReducers";
-import { cartReducer } from "./reducers/cartReducers";
+} from "./Reducers/productReducers";
+import { cartReducer } from "./Reducers/cartReducers";
 import {
   userLoginReducer,
   userRegisterReducer,
@@ -19,7 +19,7 @@ import {
   userListReducer,
   userDeleteReducer,
   userUpdateReducer,
-} from "./reducers/userReducers";
+} from "./Reducers/userReducers";
 import {
   orderCreateReducer,
   orderDetailsReducer,
@@ -27,7 +27,7 @@ import {
   orderDeliverReducer,
   orderListMyReducer,
   orderListReducer,
-} from "./reducers/orderReducers";
+} from "./Reducers/orderReducers";
 
 const reducer = combineReducers({
   productList: productListReducer,
