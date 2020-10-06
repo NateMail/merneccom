@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/NateMail/merneccom/issues"
   },
-  "homepage": "https://github.com/NateMail/merneccom#readme",
+  "homepage": "https://propshopmern.herokuapp.com",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
