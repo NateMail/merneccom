@@ -21,7 +21,6 @@ const CartScreen = ({ match, location, history }) => {
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cart);
-
   const { cartItems } = cart;
 
   useEffect(() => {
@@ -75,7 +74,6 @@ const CartScreen = ({ match, location, history }) => {
                       ))}
                     </Form.Control>
                   </Col>
-
                   <Col md={2}>
                     <Button
                       type="button"
@@ -91,7 +89,6 @@ const CartScreen = ({ match, location, history }) => {
           </ListGroup>
         )}
       </Col>
-
       <Col md={4}>
         <Card>
           <ListGroup variant="flush">
@@ -105,15 +102,14 @@ const CartScreen = ({ match, location, history }) => {
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
                 .toFixed(2)}
             </ListGroup.Item>
-
             <ListGroup.Item>
               <Button
                 type="button"
                 className="btn-block"
-                disabled={cart.cartItems.length === 0}
+                disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
               >
-                Proceed to Checkout
+                Proceed To Checkout
               </Button>
             </ListGroup.Item>
           </ListGroup>
